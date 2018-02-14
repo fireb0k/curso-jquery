@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Botones en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<article data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Botones</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<h2>Botones</h2>
+			<p>En bloque</p>
+			<p><input type="button" value="Un input de tipo button"></p>
+			<p><button>un button de html</button></p>
+			<p><a href="#" data-role="button">Un enlace como botón</a></p>
+			<p>En linea</p>
+			<p><input type="button" value="Un input de tipo button" data-inline="true"></p>
+			<p><button data-inline="true">un button de html</button></p>
+			<p><a href="#" data-role="button" data-inline="true">Un enlace como botón</a></p>
+			<h2>Grupo de Botones</h2>
+			<p>Controles Verticales</p>
+			<nav data-role="controlgroup">
+				<a href="#" data-role="button">Botón 1</a>
+				<a href="#" data-role="button">Botón 2</a>
+				<a href="#" data-role="button">Botón 3</a>
+			</nav>
+			<p>Controles Horizontales</p>
+			<nav data-role="controlgroup" data-type="horizontal">
+				<a href="#" data-role="button" data-theme="b">Botón 1</a>
+				<a href="#" data-role="button" data-theme="b">Botón 2</a>
+				<a href="#" data-role="button" data-theme="b">Botón 3</a>
+			</nav>
+			<h2>Tipos de Enlaces</h2>
+			<a href="mailto:jonmircha@bextlan.com" data-role=button>Email</a>
+			<a href="tel:5215523456789" data-role=button>Teléfono</a>
+			<a href="sms://5215523456789" data-role=button>SMS</a>
+			<a href="skype:call" data-role=button>Skype</a>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

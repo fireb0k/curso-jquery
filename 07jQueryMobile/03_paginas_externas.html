@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Páginas Externas en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<article data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Páginas Externas</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<p>Enlaces Externos</p>
+			<p>Página externa <a href="externo_no_movil.html">NO móvil</a></p>
+			<p>Página externa <a href="externo_movil.html">móvil</a></p>
+			<p>Página externa móvil con <a href="externo_movil2.html" data-prefetch>data-prefetch</a></p>
+			<p>Página externa <a href="externo_movil2.html" data-ajax="false">sin AJAX</a></p>
+			<p>Página que <a href="no_existe.html">NO existe</a></p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

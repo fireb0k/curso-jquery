@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eventos en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<article data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Eventos</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<h2>Eventos Táctiles</h2>
+			<p>
+				En este ejercicio aprenderemos a manipular los eventos táctiles en jQueryMobile:
+			</p>
+			<ul>
+				<li>Orientación</li>
+				<li>Tap</li>
+				<li>Swipe</li>
+			</ul>
+			<h3>Evento Orientación</h3>
+			<article id="orientacion">
+				<div id="portrait">
+					<h4>Orientación Vertical</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illo eaque, dolores cumque, adipisci commodi. Odit nemo dignissimos sed beatae harum dolorum, saepe. Fuga quis at dolorem veritatis reiciendis architecto.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quisquam delectus iusto aut, sed eius dolorum numquam temporibus. Est, eligendi similique blanditiis consequuntur omnis? Quod provident et possimus! Sequi, unde?
+					</p>
+				</div>
+				<div id="landscape">
+					<h4>Orientación Horizontal</h4>
+					<div class="ui-grid-a">
+						<p class="ui-block-a">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga autem repellat eos culpa numquam, non sequi ratione eveniet asperiores earum nesciunt molestiae similique nisi dolores ipsa aut ex voluptas sunt.
+						</p>
+						<p class="ui-block-b">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quia itaque quae molestias necessitatibus, optio, vero maxime ut, aut accusamus rem earum laborum nesciunt nostrum ab fugit magni unde laboriosam.
+						</p>
+					</div>
+				</div>
+			</article>
+			<h3>Evento Tap</h3>
+			<article id="tap" class="eventos"></article>
+			<h3>Evento Swipe</h3>
+			<article id="swipe" class="eventos"></article>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="./eventos.js"></script>
+</body>
+</html>

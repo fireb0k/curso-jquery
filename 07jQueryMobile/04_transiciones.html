@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transiciones en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<!-- Página uno -->
+	<article data-role="page" id="uno">
+		<header data-role="header" data-position="fixed">
+			<h1>Transiciones</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<p>Estás en la página uno</p>
+			<p><a href="#dos">fade</a></p>
+			<p><a href="#dos" data-transition="none">none</a></p>
+			<p><a href="#dos" data-transition="pop">pop</a></p>
+			<p><a href="#dos" data-transition="flip">flip</a></p>
+			<p><a href="#dos" data-transition="turn">turn</a></p>
+			<p><a href="#dos" data-transition="flow">flow</a></p>
+			<p><a href="#dos" data-transition="slide">slide</a></p>
+			<p><a href="#dos" data-transition="slidefade">slidefade</a></p>
+			<p><a href="#dos" data-transition="slidedown">slidedown</a></p>
+			<p><a href="#dos" data-transition="slideup">slideup</a></p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<!-- Página dos -->
+	<article data-role="page" id="dos">
+		<header data-role="header" data-position="fixed">
+			<h1>Páginas Internas</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<p>Estás en la página dos</p>
+			<p>Vamos a la página <a href="#uno">uno</a></p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

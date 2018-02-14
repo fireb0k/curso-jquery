@@ -1,0 +1,12 @@
+img { max-width: 100%; }
+
+
+.ui-icon-myicon:after {
+	background-image: url('http://bextlan.com/img/para-cursos/icon-html5.png');
+}
+
+.eventos {
+	min-height: 300px;
+	background: #222;
+	color: greenyellow;
+}

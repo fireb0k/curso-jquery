@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Framework de Pruebas Unitarias QUnit</title>
+    <style>
+        html {
+            font-family: 16px;
+            font-family: sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.1.1.css">
+</head>
+<body>
+    <h1>Framework de Pruebas Unitarias QUnit</h1>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.1.1.js"></script>
+    <script>
+        console.log(QUnit);
+        
+        //Definiendo una prueba unitaria
+        QUnit.test('hola QUnit', function (assert) {
+            assert.ok(1 == '1', 'Prueba Satisfactoria');
+            assert.ok(1 === '1', 'Prueba Insatisfactoria');
+        });
+
+        function esNumero(numero) {
+            return parseFloat(numero) == numero ? true : false;
+        }
+
+        QUnit.test('es un número', function (assert) {
+            assert.ok( esNumero(0) );
+            assert.ok( esNumero(2) );
+            assert.ok( esNumero(-4) );
+            assert.ok( esNumero('1') );
+            assert.ok( esNumero('yolo') );
+            assert.ok( !esNumero('yolo') );
+        });
+    </script>
+</body>
+</html>

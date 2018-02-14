@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Páneles en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<article data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Páneles</h1>
+			<a data-icon="bars" data-iconpos="notext" href="#menu">Menú</a>
+			<a data-icon="info" data-iconpos="notext" href="#mas-info">Más Info</a>
+		</header>
+		<nav data-role="panel" data-display="overlay" id="menu">
+			<ul data-role="listview">
+				<li data-icon="delete"><a href="#" data-rel="close">Cerrar</a></li>
+				<li><a href="#">jQuery</a></li>
+				<li><a href="#">jQuery UI</a></li>
+				<li><a href="#">jQuery Mobile</a></li>
+				<li><a href="#">Q Unit</a></li>
+				<li><a href="#">Sizzle</a></li>
+			</ul>
+		</nav>
+		<aside data-role="panel" id="mas-info" data-position="right">
+			<p>
+				Para más información sobre el curso de jQuery visita <a href="http://bextlan.com/cursos/jquery" target="_blank">bextlan.com</a>
+			</p>
+			<p>
+				¿Quieres ver todos los videos de este curso?
+				Aquí te dejamos la lista de reproducción en nuestro canal de <a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUYvLDfVUXOhnZ6QSouIfQQ7" target="_blank">youtube</a>
+			</p>
+			<a href="#" data-role="button" data-rel="close">Cerrar</a>
+		</aside>
+		<section role="main" class="ui-content">
+			<p>Páneles de navegación en jQueryMobile</p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bloques y Acordeones en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<article data-role="page">
+		<header data-role="header" data-position="fixed">
+			<h1>Bloques y Acordeones</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<h2>Bloques</h2>
+			<div data-role="collapsible" data-content-theme="b">
+				<h2>Título del Bloque</h2>
+				<p>
+					Contenido que se oculta por defecto pero al hacer click en el encabezado se muestra.
+				</p>
+			</div>
+			<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="a">
+				<h2>Título del Bloque</h2>
+				<p>
+					Contenido que se muestra por defecto pero al hacer click en el encabezado se oculta.
+				</p>
+			</div>
+			<h2>Acordeón</h2>
+			<div data-role="collapsible-set">
+				<div data-role="collapsible" data-content-theme="b">
+					<h2>Título del Bloque</h2>
+					<p>
+						Contenido que se oculta por defecto pero al hacer click en el encabezado se muestra.
+					</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="a">
+					<h2>Título del Bloque</h2>
+					<p>
+						Contenido que se muestra por defecto pero al hacer click en el encabezado se oculta.
+					</p>
+				</div>
+				<div data-role="collapsible">
+					<h2>Título del Bloque</h2>
+					<p>
+						Contenido que se oculta por defecto pero al hacer click en el encabezado se muestra.
+					</p>
+				</div>
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+					<h2>Título del Bloque</h2>
+					<p>
+						Contenido que se oculta por defecto pero al hacer click en el encabezado se muestra.
+					</p>
+				</div>
+			</div>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

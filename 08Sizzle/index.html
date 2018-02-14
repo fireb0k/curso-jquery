@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Sizzle: Motor de selectores CSS escrito en JS</title>
+</head>
+<body>
+    <h1>Sizzle: Motor de selectores CSS escrito en JS</h1>
+    <p>Esto es un párrafo</p>
+    <p id="unico">Soy un párrafo único</p>
+    <p>Soy un tercer párrafo</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam reiciendis numquam quasi facere ipsum velit recusandae porro dolores, distinctio totam veniam voluptas possimus tempora esse quod perferendis. Eius, sed consequuntur!
+    </p>
+    <script src="./sizzle.min.js"></script>
+    <script>
+        (function ($) {
+            console.log(
+                $('p'),
+                $('#unico')
+            );
+
+            function holaSizzle () {
+                alert('Hola Sizzle');
+            }
+
+            //$('#unico')[0].onclick = holaSizzle;
+            //$('p')[0].onclick = holaSizzle;
+            //$('p')[1].onclick = holaSizzle;
+
+            $('p').forEach(function (p) {
+                p.onclick = holaSizzle;
+                p.style.fontSize = '3rem';
+                p.style.color = '#FF5700';
+            });
+
+            //document.querySelector()
+            //document.querySelectorAll()
+            //https://www.youtube.com/watch?v=2Pc4IQk1O3c&index=7&list=PLvq-jIkSeTUaw9krmA6bf5inYcuvUNWI3
+        })(Sizzle);
+    </script>
+</body>
+</html>

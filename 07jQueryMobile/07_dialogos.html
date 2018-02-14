@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diálogos en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<!-- Página uno -->
+	<article data-role="page" id="uno">
+		<header data-role="header" data-position="fixed">
+			<h1>Diálogos</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<p>Abrir <a href="#dos" data-transition="flip" data-rel="dialog">diálogo</a></p>
+			<p>Otro <a href="#dialogo" data-transition="flip" data-rel="dialog">diálogo</a></p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<!-- Página dos -->
+	<article data-role="page" id="dos">
+		<header data-role="header" data-position="fixed">
+			<h1>Diálogo</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<p>Página mostrada como una caja de diálogo</p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<!-- Página diálogo -->
+	<article data-role="page" id="dialogo">
+		<section role="main" class="ui-content">
+			<p>Contenido de un diálogo</p>
+			<a href="#" data-role="button" data-rel="back" data-theme="b" data-transition="flow" data-inline="true">Aceptar</a>
+		</section>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

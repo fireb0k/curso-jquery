@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>jQuery 3</title>
+    <style>
+        @keyframes animCss {
+            from, to {
+                top: 0;
+                left: 0;
+                font-size: 3rem;
+            }
+
+            40%, 60% {
+                top: 300px;
+                left: 100px;
+                opacity: 1;
+                font-size: 6rem;
+            }
+
+            50% { opacity: 0; }
+        }
+
+        html {
+			font-size: 16px;
+			font-family: sans-serif;
+		}
+
+		ul { 
+			font-size: 2rem;
+		}
+		
+		h1 {
+            font-size: 3rem;
+            position: relative;
+            animation: animCss 6800ms 1 normal 0s linear;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery 3</h1>
+    <ul>
+		<li><a href="http://jquery.com/upgrade-guide/3.0/" target="_blank">Cambios en la versión 3</a></li>
+		<li><a href="https://oscarotero.com/jquery/" target="_blank">jQuery Referencia Rápida</a></li>
+		<li><a href="http://jquery.com/download/" target="_blank">jQuery vs jQuery Slim</a></li>
+		<li><a href="http://youmightnotneedjquery.com/" target="_blank">Tal vez no necesitas jQuery</a></li>
+		<li><a href="https://plainjs.com/" target="_blank">plainJS</a></li>
+	</ul>
+    <!--<script src="./jquery.min.js"></script>-->
+    <script src="./jquery.slim.min.js"></script>
+    <script>
+        /*$(document).on('ready', function () {
+            alert('Hola jQuery 3');
+        });*/
+
+       /* $(document).ready(function () {
+            alert('Hola jQuery 3');
+        });*/
+
+        $(function () {
+            //alert('Hola jQuery 3');
+
+            // $('h1').animate({
+            //     top: 300,
+            //     left: 100,
+            //     fontSize: '6rem'
+            // }, 3000);
+
+            // $('h1').fadeOut().fadeIn();
+
+            // $('h1').animate({
+            //     top: 0,
+            //     left: 0,
+            //     fontSize: '3rem'
+            // }, 3000);
+        });
+    </script>
+</body>
+</html>

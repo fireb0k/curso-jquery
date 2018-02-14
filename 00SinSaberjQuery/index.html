@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery sin saber jQuery</title>
+	<link rel="stylesheet" href="flexslider.css">
+</head>
+<body>
+	<h1>jQuery sin saber jQuery</h1>
+	<h2>FlexSlider 2</h2>
+	<!-- http://flexslider.woothemes.com/ -->
+	<!-- Place somewhere in the <body> of your page -->
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="img/slide1.jpg" />
+			</li>
+			<li>
+				<img src="img/slide2.jpg" />
+			</li>
+			<li>
+				<img src="img/slide3.jpg" />
+			</li>
+			<li>
+				<img src="img/slide4.jpg" />
+			</li>
+		</ul>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script defer src="jquery.flexslider.js"></script>
+	<script>
+		// Can also be used with $(document).ready()
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide"
+			});
+		});
+	</script>
+</body>
+</html>

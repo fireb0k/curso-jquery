@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Análisis e Implementación de Componentes de Terceros</title>
+	<style>html, body { font-family: Helvetica, sans-serif; font-size: 16px; }</style>
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5">
+	<style>
+		.flexslider {
+			margin: auto;
+			width: 80%;
+		}
+
+		.flex-caption {
+			width: 96%;
+			padding: 2%;
+			left: 0;
+			bottom: 0;
+			/* background: rgba(0,0,0,.5); */
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+			/* font-size: 14px; */
+			line-height: 18px;
+			/* Agregar margin:0 a los estilos propuestos por el plugin */
+			margin: 0;
+			font-size: 20px;
+			background-color: rgba(0,0,0,.5);
+		}
+
+		#oculto { display: none; }
+	</style>
+</head>
+<body>
+	<h1>Análisis e Implementación de Componentes de Terceros</h1>
+	<hr>
+	<h2>FlexSlider 2</h2>
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="img/normal/img1.jpg" />
+				<p class="flex-caption">Tus ideas apestan</p>
+			</li>
+			<li>
+				<img src="img/normal/img2.jpg" />
+				<p class="flex-caption">Piedra, Papel o Tijeras</p>
+			</li>
+			<li>
+				<img src="img/normal/img3.jpg" />
+				<p class="flex-caption">Amo la música</p>
+			</li>
+			<li>
+				<img src="img/normal/img4.jpg" />
+				<p class="flex-caption">Barry Allen, The Flash</p>
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<h2>Fancybox 2</h2>
+	<h3>Galeria Sencilla</h3>
+	<a class="galeria" rel="galeria1" href="img/normal/img5.jpg" title="Imagen 5">
+		<img src="img/thumbs/img5.jpg">
+	</a>
+	<a class="galeria" rel="galeria1" href="img/normal/img6.jpg" title="Imagen 6">
+		<img src="img/thumbs/img6.jpg">
+	</a>
+	<a class="galeria" rel="galeria1" href="img/normal/img7.jpg" title="Imagen 7">
+		<img src="img/thumbs/img7.jpg">
+	</a>
+	<a class="galeria" rel="galeria2" href="img/normal/img8.jpg" title="Imagen 8">
+		<img src="img/thumbs/img8.jpg">
+	</a>
+	<a class="galeria" rel="galeria2" href="img/normal/img9.jpg" title="Imagen 9">
+		<img src="img/thumbs/img9.jpg">
+	</a>
+	<a class="galeria" rel="galeria2" href="img/normal/img10.jpg" title="Imagen 10">
+		<img src="img/thumbs/img10.jpg">
+	</a>
+	<h3>Diferentes Efectos</h3>
+	<a id="efecto_1" href="img/normal/img11.jpg" title="">
+		<img src="img/thumbs/img11.jpg">
+	</a>
+	<a id="efecto_2" href="img/normal/img12.jpg" title="Imagen 12">
+		<img src="img/thumbs/img12.jpg">
+	</a>
+	<a id="efecto_3" href="img/normal/img13.jpg" title="Imagen 13">
+		<img src="img/thumbs/img13.jpg">
+	</a>
+	<a id="efecto_4" href="img/normal/img14.jpg" title="Imagen 14">
+		<img src="img/thumbs/img14.jpg">
+	</a>
+	<a id="efecto_5" href="img/normal/img15.jpg" title="Imagen 15">
+		<img src="img/thumbs/img15.jpg">
+	</a>
+	<h3>Otros contenidos</h3>
+	<ul>
+		<li>
+			<a href="#no-existe" class="otros" title="Error de carga">Error de carga</a>
+		</li>
+		<li>
+			<a href="#oculto" class="otros" title="Contenido oculto">Contenido oculto</a>
+		</li>
+		<li>
+			<a href="ajax.php" class="otros  fancybox.ajax" title="Carga por AJAX">Carga por AJAX</a>
+		</li>
+		<li>
+			<a href="http://bextlan.com" class="otros  fancybox.iframe" title="Cargar en Iframe">Cargar en Iframe</a>
+		</li>
+		<li>
+			<a href="swf/AnimationVSAnimator.swf" class="otros" title="Animación SWF">Animación SWF</a>
+		</li>
+	</ul>
+	<div id="oculto">
+		<p>Este contenido esta oculto en el html (tiene un display:none) y se ejecuta con fancybox</p>
+		<img src="img/normal/img16.jpg" />
+	</div>
+	<h3>Contenidos de Redes Sociales</h3>
+	<ul>
+		<li>
+			<a rel="gal-sm" href="http://www.youtube.com/watch?v=mVEbmLEX0Ro" class="social">Youtube</a>
+		</li>
+		<li>
+			<a rel="gal-sm" href="http://instagram.com/p/bAIi8PDOmj/" class="social">Instagram</a>
+		</li>
+		<li>
+			<a rel="gal-sm" href="http://vimeo.com/19469447" class="social">Vimeo</a>
+		</li>
+		<li>
+			<a rel="gal-sm" href="http://maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&t=h&z=17" class="social">Google Maps</a>
+		</li>
+	</ul>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/codigos.js"></script>
+</body>
+</html>

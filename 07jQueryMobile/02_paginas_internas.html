@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Páginas Internas en jQueryMobile</title>
+	<link rel="stylesheet" href="./bextlan.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+	<!-- Página uno -->
+	<article data-role="page" id="uno">
+		<header data-role="header" data-position="fixed">
+			<h1>Páginas Internas</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<p>Estás en la página uno</p>
+			<p>Vamos a la página <a href="#dos">dos</a></p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<!-- Página dos -->
+	<article data-role="page" id="dos">
+		<header data-role="header" data-position="fixed">
+			<h1>Páginas Internas</h1>
+		</header>
+		<section role="main" class="ui-content">
+			<p>Estás en la página dos</p>
+			<p>Vamos a la página <a href="#uno">uno</a></p>
+		</section>
+		<footer data-role="footer" data-position="fixed">
+			<h4>Pié de la webapp</h4>
+		</footer>
+	</article>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
